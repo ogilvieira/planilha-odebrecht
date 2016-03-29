@@ -1,0 +1,7 @@
+body {
+  background-color: whitesmoke;
+ }
+
+.is-active { display: block; }
+.is-inactive { display: none; }
+/*# sourceMappingURL=app.css.map */
