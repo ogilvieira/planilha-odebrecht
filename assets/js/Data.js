@@ -58,6 +58,7 @@ DATA.codename.male.push("Atleta");
 DATA.codename.male.push("Roberval");
 DATA.codename.male.push("Calabresa");
 DATA.codename.male.push("do Viagra");
+DATA.codename.male.push("do Triplex");
 
 //COCDENAME FEMALE
 DATA.codename.female.push("da Federal");
@@ -113,7 +114,7 @@ DATA.descritpion['for'].push("para servir de laranja");
 DATA.descritpion['for'].push("para prometer apoio politico");
 DATA.descritpion['for'].push("para obstruiu as investigações da Lava Jato");
 DATA.descritpion['for'].push("para barrar uma CPI sobre a Petrobras");
-DATA.descritpion['for'].push("para reforar triplex na praia");
+DATA.descritpion['for'].push("para reformar triplex na praia");
 DATA.descritpion['for'].push("para delatar oposição");
 DATA.descritpion['for'].push("para comprar helicóptero");
 DATA.descritpion['for'].push("para fazer caixa dois");
