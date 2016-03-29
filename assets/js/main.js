@@ -15,7 +15,7 @@
 
   	
   	
-  	window.open("https://www.facebook.com/dialog/oauth?client_id="+DATA.fbAppId+"&redirect_uri=http://ogilvieira.github.io/planilha-odebrecht/");
+  	window.open("https://www.facebook.com/dialog/oauth?client_id="+DATA.fbAppId+"&redirect_uri=ogilvieira.github.io/planilha-odebrecht/", "_self");
 
   	//get fb login
 	// FB.login(function(res) {
