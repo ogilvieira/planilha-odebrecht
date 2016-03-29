@@ -119,5 +119,5 @@ DATA.descritpion['for'].push("para comprar helicóptero");
 DATA.descritpion['for'].push("para fazer caixa dois");
 DATA.descritpion['for'].push("em benefício própio e para repasse ao PT");
 DATA.descritpion['for'].push("em troca de contratos com a Caixa Econômica Federal");
-DATA.descritpion['for'].push("liderar manifestação pró Aécio");
-DATA.descritpion['for'].push("liderar manifestação pró Dilma");
+DATA.descritpion['for'].push("para liderar manifestação pró Aécio");
+DATA.descritpion['for'].push("para liderar manifestação pró Dilma");
