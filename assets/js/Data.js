@@ -112,7 +112,7 @@ DATA.descritpion['who'].push("da Igreja Universal");
 //FOR
 DATA.descritpion['for'].push("para levar dinheiro na cuéca");
 DATA.descritpion['for'].push("para servir de laranja");
-DATA.descritpion['for'].push("para prometer apoio politico");
+DATA.descritpion['for'].push("para prometer apoio político");
 DATA.descritpion['for'].push("para obstruiu as investigações da Lava Jato");
 DATA.descritpion['for'].push("para barrar uma CPI sobre a Petrobras");
 DATA.descritpion['for'].push("para reformar triplex na praia");
