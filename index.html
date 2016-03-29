@@ -44,57 +44,60 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-
-        <div id="status">
+        <div id="intro">
+            <div class="container">
+                <header class="page-header">
+                    <h1>Quem é você na planilha da Odebrecht</h1>
+                </header>
+                <button class="btn btn-primary btn-large btn-login">Não tenho <strong>nada</strong> a ver com isso.</button>
+            </div> 
+            <!-- /container --> 
         </div>
 
-<!-- Modal -->
-<div id="charges" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+        <div id="result">
+            <div class="container">
+                <div class="col">
+                    <header class="page-header">
+                        <h1>Quem diria, até você...</h1>
+                    </header>                
+                    <div class="result-wrap">
+                        <figure>
+                            <img src="http://www.dummyimage.com/200x200/444/ccc.jpg">
+                        </figure>
+                        <h2 class="name">Nome Sobrenome</h2>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div>
+                        <div class="prices">
+                            Quanto embolsou: R$ 103.000,00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Acusações</h4>
-      </div>
-      <div class="modal-body">
-        <blockquote>
-        <p>
-        [...]“lavagem de dinheiro e falsificação de ativos, envolvendo um apartamento de luxo em Guarujá. Os investigadores  dizem que o Sr. da Silva adquiriu a propriedade, mas ele nega. Existem informações de que a OEA, uma empresa de construção, teria pago para fazer melhorias no apartamento, com fundos que podem ter vindo do esquema de corrupção da Petrobras, a empresa nacional de petróleo.”[...]
-        </p>
-        <footer>
-<a href="http://www.jb.com.br/pais/noticias/2016/03/10/nyt-ex-presidente-do-brasil-luiz-inacio-lula-da-silva-enfrenta-acusacoes/">Jornal do Brasil</a></footer>
-        </blockquote>
-      </div>
-      <div class="modal-footer">
-
-
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    </div> <!-- /container -->        
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="./assets/js/vendor/bootstrap.min.js"></script>
+        <script src="./assets/js/vendor/mustache.js"></script>
 
+        <script src="./assets/js/Data.js"></script>
+        <script src="./assets/js/Generator.js"></script>
         <script src="./assets/js/main.js"></script>
 
         <script>
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+            (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));        
 
   
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
