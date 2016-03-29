@@ -107,6 +107,7 @@ DATA.descritpion['who'].push("da militância petista");
 DATA.descritpion['who'].push("da empresa de fachada de Alberto Youssef");
 DATA.descritpion['who'].push("da CUT");
 DATA.descritpion['who'].push("da Globo");
+DATA.descritpion['who'].push("da Igreja Universal");
 
 //FOR
 DATA.descritpion['for'].push("para levar dinheiro na cuéca");
