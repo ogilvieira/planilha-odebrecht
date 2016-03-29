@@ -8,8 +8,9 @@
     });
 	FB.getLoginStatus(function(res){
 		console.log(res);
-		if(res.status == "conected"){
+		if(res.status == "connected"){
 		FB.api('/me', { fields: 'first_name,gender,hometown' }, function(res) {
+			console.log(res);
 			if(res.error){ 
 				$('#result').removeClass('is-active').find('.result-wrap').html('');
 				$('#intro').removeClass('is-inactive');
