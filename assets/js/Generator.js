@@ -6,7 +6,7 @@ var Generator = (function(){
 		gender : 'male',
 		uid : 0
 	};
-	var RESULT_tpl = "<figure class=\"avatar\"><img src=\"{avatar}\"></figure><h2 class=\"name\">{name}</h2><div class=\"description\">{description}</div><div class=\"prices\">Quanto embolsou: R$ {money}</div>";	
+	var RESULT_tpl = "<figure class=\"avatar\"><img src=\"{{avatar}}\"></figure><h2 class=\"name\">{{name}}</h2><div class=\"description\">{{description}}</div><div class=\"prices\">Quanto embolsou: <strong>R$ {{money}}</strong></div>";	
 
 	obj.getRandomInt = function (min, max) { return Math.floor(Math.random() * (max - min + 1) + min); };
 	
@@ -22,7 +22,12 @@ var Generator = (function(){
 		RESULT.money = obj.getRandomInt(0, 10e9);
 
 		var html = Mustache.to_html(RESULT_tpl, RESULT);
-		$('#result').find('.result-wrap').html(html);
+		$('#intro').addClass('is-inactive');
+		$('#result').removeClass('is-inactive').find('.result-wrap').html(html);
+		$('#result').find('.btn-rand').on('click', function(e){
+			e.preventDefault();
+			obj.getResult();
+		});
 	};
 
 	obj.init = function(config){
