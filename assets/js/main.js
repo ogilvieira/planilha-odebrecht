@@ -8,6 +8,9 @@
     });
   };
 
+  FB.getLoginStatus(function(res){
+  	console.log(res);
+  });
 
 
   $('.btn-login').on('click', function(e){
