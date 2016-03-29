@@ -6,20 +6,17 @@ var Generator = (function(){
 		gender : 'male',
 		uid : 0
 	};
-	var RESULT_tpl = "<figure class=\"avatar\"><img src=\"{{avatar}}\"></figure><h2 class=\"name\">{{name}}</h2><div class=\"description\">{{description}}</div><div class=\"prices\">Quanto embolsou: <strong>R$ {{money}}</strong></div>";	
+	var RESULT_tpl = "<figure class=\"avatar\"><img src=\"{{avatar}}\"></figure><h2 class=\"name\">{{name}}</h2><div class=\"description\">{{description}}</div><div class=\"prices\">Quanto embolsou: <strong>{{money}}</strong></div>";	
 
-	obj.getRandomInt = function (min, max) { return Math.floor(Math.random() * (max - min + 1) + min); };
-	
 	obj.getPhoto = function(uid){ return "http://graph.facebook.com/"+uid+"/picture?type=large"; };
 
 	obj.getResult = function(){
-		var tempObjProfile = DATA.profile[obj.config.gender][obj.getRandomInt(0, (DATA.profile[obj.config.gender].length-1))];
 
 		RESULT = {};
 		RESULT.avatar = obj.getPhoto(obj.config.uid);
-		RESULT.name = obj.config.first_name+" "+tempObjProfile.nick;
-		RESULT.description = tempObjProfile.description;
-		RESULT.money = obj.getRandomInt(0, 10e9);
+		RESULT.name = obj.config.first_name+" "+DATA.getRandom(DATA.codename[obj.config.gender]);
+		RESULT.description = DATA.getRandom(DATA.descritpion['from'])+" "+DATA.getRandom(DATA.descritpion['who'])+" "+DATA.getRandom(DATA.descritpion['for'])+".";
+		RESULT.money = DATA.getMoney();
 
 		var html = Mustache.to_html(RESULT_tpl, RESULT);
 		$('#intro').addClass('is-inactive');
