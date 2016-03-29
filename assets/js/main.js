@@ -8,23 +8,30 @@
     });
   };
 
+
+
   $('.btn-login').on('click', function(e){
   	e.preventDefault();
+
+  	
+  	
+  	window.open("https://www.facebook.com/dialog/oauth?client_id="+DATA.fbAppId+"&redirect_uri=http://ogilvieira.github.io/planilha-odebrecht/");
+
   	//get fb login
-	FB.login(function(res) {
-		FB.api('/me', { fields: 'first_name,gender,hometown' }, function(res) {
-			if(res.error){ 
-				$('#result').removeClass('is-active').find('.result-wrap').html('');
-				$('#intro').removeClass('is-inactive');
-				return; 
-			};
-			Generator.init({
-				first_name : res.first_name,
-				gender : res.gender,
-				uid : res.id
-			});
-		});
-	},{ scope: 'public_profile', auth_type: 'rerequest' });
+	// FB.login(function(res) {
+	// 	FB.api('/me', { fields: 'first_name,gender,hometown' }, function(res) {
+	// 		if(res.error){ 
+	// 			$('#result').removeClass('is-active').find('.result-wrap').html('');
+	// 			$('#intro').removeClass('is-inactive');
+	// 			return; 
+	// 		};
+	// 		Generator.init({
+	// 			first_name : res.first_name,
+	// 			gender : res.gender,
+	// 			uid : res.id
+	// 		});
+	// 	});
+	// },{ scope: 'public_profile', auth_type: 'rerequest' });
   });
 
 })(jQuery || $);
