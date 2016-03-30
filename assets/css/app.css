@@ -64,6 +64,23 @@ body {
       font-size: 72px;
       margin: 40px auto; }
 
+@media screen and (max-width: 960px) {
+  #intro .page-header h1 {
+    font-size: 52px; } }
+@media screen and (max-width: 760px) {
+  #intro .page-header h1 {
+    font-size: 42px;
+    margin: 30px auto; }
+
+  #intro p {
+    font-size: 16px; } }
+@media screen and (max-width: 480px) {
+  #intro .page-header h1 {
+    font-size: 26px;
+    margin: 20px auto; }
+
+  #intro .btn {
+    font-size: 14px; } }
 #result {
   position: absolute;
   top: 0;
