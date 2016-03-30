@@ -4,7 +4,7 @@ var Generator = (function(){
 	lowLag.load("toasty.wav");
 	lowLag.suspend = true;
 	var japanese = $('.japanese');
-	var isToasty = false
+	var isToasty = false;
 
 	var RESULT = {};
 	obj.config = {
@@ -27,7 +27,6 @@ var Generator = (function(){
 		RESULT.money = DATA.getMoney();
 
 		var html = Mustache.to_html(RESULT_tpl, RESULT);
-		// $('#intro').addClass('is-inactive');
 		$('#result').removeClass('is-inactive').find('.result-wrap').html(html);
 		$('#result').find('.btn-rand').on('click', function(e){
 			e.preventDefault();
@@ -35,6 +34,7 @@ var Generator = (function(){
 			if(!isToasty){
 				lowLag.play("toasty.wav");
 				japanese.addClass('is-active');
+				isToasty = true;
 				setTimeout(function(){
 					japanese.removeClass('is-active');
 					isToasty = false;
