@@ -97,4 +97,30 @@ body {
     font-size: 18px;
     max-width: 100%; }
 
+@media screen and (max-width: 760px) {
+  #result .btn {
+    padding: 15px;
+    margin: 0 auto 10px; } }
+@media screen and (max-width: 480px) {
+  #result .page-header h1 {
+    font-size: 26px; }
+
+  #result img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto; }
+
+  #result .name {
+    font-size: 22px; }
+
+  #result .description {
+    font-size: 14px; }
+
+  #result .prices {
+    margin: 10px auto;
+    font-size: 18px; }
+
+  #result .btn {
+    margin: 0; } }
+
 /*# sourceMappingURL=app.css.map */

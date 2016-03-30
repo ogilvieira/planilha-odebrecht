@@ -13,7 +13,9 @@ var Generator = (function(){
 	obj.getResult = function(){
 
 		RESULT = {};
-		RESULT.avatar = obj.getPhoto(obj.config.uid);
+		if(!RESULT.avatar){
+			RESULT.avatar = obj.getPhoto(obj.config.uid);
+		}
 		RESULT.name = obj.config.first_name+" "+DATA.getRandom(DATA.codename[obj.config.gender]);
 		RESULT.description = DATA.getRandom(DATA.descritpion['from'])+" "+DATA.getRandom(DATA.descritpion['who'])+" "+DATA.getRandom(DATA.descritpion['for'])+".";
 		RESULT.money = DATA.getMoney();
