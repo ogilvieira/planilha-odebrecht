@@ -1,5 +1,11 @@
 var Generator = (function(){
-	var obj = {};
+	var obj = {};	
+	lowLag.init({'urlPrefix':'./assets/sound/'});
+	lowLag.load("toasty.wav");
+	lowLag.suspend = true;
+	var japanese = $('.japanese');
+	var isToasty = false
+
 	var RESULT = {};
 	obj.config = {
 		first_name : 'Fulano',
@@ -26,6 +32,14 @@ var Generator = (function(){
 		$('#result').find('.btn-rand').on('click', function(e){
 			e.preventDefault();
 			obj.getResult();
+			if(!isToasty){
+				lowLag.play("toasty.wav");
+				japanese.addClass('is-active');
+				setTimeout(function(){
+					japanese.removeClass('is-active');
+					isToasty = false;
+				}, 600);			
+			}
 		});
 	};
 

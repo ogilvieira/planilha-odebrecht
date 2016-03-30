@@ -37,6 +37,21 @@ body {
   .btn.btn-large {
     padding: 20px; }
 
+.japanese {
+  position: absolute;
+  bottom: 60px;
+  z-index: 9;
+  background: url(../img/japanese.png) no-repeat;
+  width: 148px;
+  height: 290px;
+  background-size: 148px 290px;
+  right: 0;
+  -webkit-transition: 0.1s all linear;
+  -moz-transition: 0.1s all linear;
+  transition: 0.1s all linear; }
+  .japanese.is-active {
+    right: 0; }
+
 body {
   margin: 0;
   padding: 0;

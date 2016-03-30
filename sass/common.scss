@@ -39,3 +39,18 @@ body {
 		padding: 20px;
 	}
 }
+
+
+.japanese {
+		position: absolute;
+		bottom: 60px;
+		z-index: 9;
+		background: url(../img/japanese.png) no-repeat;
+		width: 148px;
+		height: 290px;
+		background-size: 148px 290px;
+		// right: -148px;
+		right: 0;
+		@include transition(.1s all linear);
+		&.is-active { right: 0; }
+	}
