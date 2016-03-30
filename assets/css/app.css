@@ -1,7 +1,62 @@
-body {
-  background-color: whitesmoke;
- }
+.is-active {
+  display: block; }
 
-.is-active { display: block; }
-.is-inactive { display: none; }
+.is-inactive {
+  display: none; }
+
+.top-fill {
+  height: 5px;
+  background: #486C8C;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9; }
+  .top-fill:after, .top-fill:before {
+    content: "";
+    display: block;
+    width: 33.3%;
+    height: 5px;
+    top: 0;
+    position: absolute; }
+  .top-fill:after {
+    left: 0;
+    background: #22A84B; }
+  .top-fill:before {
+    right: 0;
+    background: #E6BD34; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background: whitesmoke; }
+
+#intro {
+  width: 100%;
+  height: 100%;
+  background: url(../img/pattern-gray.png) whitesmoke;
+  position: absolute;
+  text-align: center;
+  overflow: auto;
+  min-width: 320px;
+  min-height: 480px; }
+  #intro:not(.is-inactive) {
+    display: block; }
+  #intro p {
+    font-size: 16px; }
+  #intro .page-header {
+    max-width: 720px;
+    margin: 0 auto 20px; }
+    #intro .page-header h1 {
+      font-family: 'Bree Serif', serif;
+      font-size: 72px;
+      margin: 40px auto; }
+  #intro .btn-login {
+    padding: 20px;
+    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Bree Serif"; }
+
 /*# sourceMappingURL=app.css.map */

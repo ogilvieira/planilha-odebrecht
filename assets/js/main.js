@@ -7,7 +7,6 @@
       version    : 'v2.5'
     });
 	FB.getLoginStatus(function(res){
-		console.log(res);
 		if(res.status == "connected"){
 		FB.api('/me', { fields: 'first_name,gender,hometown' }, function(res) {
 			console.log(res);
