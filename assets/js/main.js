@@ -7,7 +7,7 @@
       version    : 'v2.5'
     });
 	FB.getLoginStatus(function(res){
-		if(res.status == "connected"){
+		if(res.status == "connected" && document.URL.indexOf("?code=") !== -1){
 		FB.api('/me', { fields: 'first_name,gender,hometown' }, function(res) {
 			if(res.error){ 
 				$('#result').removeClass('is-active').find('.result-wrap').html('');
