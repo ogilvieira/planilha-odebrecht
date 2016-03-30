@@ -19,7 +19,7 @@ var Generator = (function(){
 		RESULT.money = DATA.getMoney();
 
 		var html = Mustache.to_html(RESULT_tpl, RESULT);
-		$('#intro').addClass('is-inactive');
+		// $('#intro').addClass('is-inactive');
 		$('#result').removeClass('is-inactive').find('.result-wrap').html(html);
 		$('#result').find('.btn-rand').on('click', function(e){
 			e.preventDefault();

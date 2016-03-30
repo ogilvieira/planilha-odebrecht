@@ -12,7 +12,7 @@
 			console.log(res);
 			if(res.error){ 
 				$('#result').removeClass('is-active').find('.result-wrap').html('');
-				$('#intro').removeClass('is-inactive');
+				// $('#intro').removeClass('is-inactive');
 				return; 
 			};
 			Generator.init({
