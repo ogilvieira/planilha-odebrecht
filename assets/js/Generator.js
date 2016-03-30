@@ -45,7 +45,6 @@ var Generator = (function(){
 
 	obj.init = function(config){
 		obj.config = $.extend( {}, obj.config, config );
-		console.log(obj.config);
 		obj.getResult();
 	};
 	return obj;
