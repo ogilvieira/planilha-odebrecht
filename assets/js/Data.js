@@ -2,11 +2,11 @@ var DATA = {};
 DATA.debug = true;
 
 // Faceboop APP ID
-if(document.location.origin == "http://ogilvieira.github.io"){
+// if(document.location.origin == "http://ogilvieira.github.io"){
 	DATA.fbAppId = '962255157185368';
-} else {
-	DATA.fbAppId = '1705492553024172';
-}
+// } else {
+	// DATA.fbAppId = '1705492553024172';
+// }
 
 DATA.codename = {
 	'male' : [],
