@@ -26,7 +26,7 @@
 
   $('.btn-login').on('click', function(e){
   	e.preventDefault();
-  	window.open("https://www.facebook.com/dialog/oauth?client_id="+DATA.fbAppId+"&redirect_uri=http://ogilvieira.github.io/planilha-odebrecht/", "_self");
+  	window.open("https://www.facebook.com/dialog/oauth?client_id="+DATA.fbAppId+"&redirect_uri=http://ogilvieira.com.br/planilha-odebrecht/", "_self");
   });
 
 })(jQuery || $);
