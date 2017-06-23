@@ -1,6 +1,6 @@
 var Generator = (function(){
 	var obj = {};	
-	lowLag.init({'urlPrefix':'./assets/sound/'});
+	lowLag.init({'urlPrefix':'./assets/sound/', force: 'audioTag'});
 	lowLag.load("toasty.wav");
 	lowLag.suspend = true;
 	var japanese = $('.japanese');
