@@ -93,7 +93,7 @@ var lowLag = new function(){
 		}
 		
 
-		var format = "sm2";
+		var format = "webkitAudio";
 		if(force != undefined) format = force;
 		else {
 			if(typeof(webkitAudioContext) != "undefined") format = 'webkitAudio';
